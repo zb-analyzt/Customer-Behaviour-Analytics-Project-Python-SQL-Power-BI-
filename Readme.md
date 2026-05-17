@@ -46,6 +46,19 @@ Power BI was used to build an interactive dashboard:
 
 The dashboard helps visualize key business trends clearly.
 
+
+## 4. Exploratory Data Analysis (EDA)
+
+The EDA was performed in the notebook [notebooks/eda.ipynb](notebooks/eda.ipynb) using the cleaned dataset [data/cleaned_ecommerce.csv](data/cleaned_ecommerce.csv). The analysis includes univariate, bivariate and multivariate visualizations to understand distributions, relationships and feature interactions.
+
+- **Univariate:** Distribution plots and summaries for `lifetime_value`, `average_order_value`, `cart_abandonment_rate`, `age`, and `churned` (histograms, KDEs, boxplots, countplots) to check skewness, outliers and class balance.
+
+- **Bivariate:** Scatter and line plots to examine relationships such as `session_duration_avg` vs `pages_per_session`, `total_purchases` vs `average_order_value`, `age` vs `gender`, and `average_order_value` by `country`.
+
+- **Multivariate:** Correlation heatmaps for engagement metrics (`email_open_rate`, `social_media_engagement_score`, `mobile_app_usage`), a full correlation matrix for numeric features, pairplots for `age`, `login_frequency`, `mobile_app_usage`, `lifetime_value`, and a bubble chart (total purchases, wishlist items, credit balance) to visualize three-way relationships.
+
+These EDA steps help identify feature distributions, potential predictors of churn, and relationships useful for modeling or dashboarding.
+
 ---
 
 ## Key Insights
